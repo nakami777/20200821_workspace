@@ -1,0 +1,164 @@
+<!--特にhtmlのバージョンを指定していない場合、html5になる-->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>N.Nakanoのポートフォリオサイト</title>
+    <!--検索エンジンに表示されるメタデータが以下なので、キーワードも含め重要-->
+    <meta
+      name="description"
+      content="技術の試し使い、ログなどを記録していくサイトです。"
+    />
+    <!--デバイスの大きさに合わせてサイズを決めるというタグ-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--bootstrapの導入-->
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!--rel属性でstylesheetを指定し、リンクを読み込めるようにする-->
+    <link rel="stylesheet" href="style.css" />
+    <!--fontを読み込む。ページが遅くなる可能性があるので注意-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700"
+      rel="stylesheet"
+    />
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <!--計算のボタンを作成-->
+    <div
+      class="btn-toolbar"
+      role="toolbar"
+      aria-label="Toolbar with button groups"
+    >
+      <div class="btn-group" role="group" aria-label="First group">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('1')"
+        >
+          1
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('2')"
+        >
+          2
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('3')"
+        >
+          3
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('4')"
+        >
+          4
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('5')"
+        >
+          5
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('6')"
+        >
+          6
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('7')"
+        >
+          7
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('8')"
+        >
+          8
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('9')"
+        >
+          9
+        </button>
+      </div>
+      <div class="btn-group" role="group" aria-label="Second group">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('+')"
+        >
+          +
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          onclick="changeNumber('-')"
+        >
+          -
+        </button>
+      </div>
+    </div>
+
+    <!--計算結果の出力-->
+    <div class="list-group">
+      <a class="list-group-item list-group-item-action list-group-item-light"
+        ><input type="text" id="display" readonly
+      /></a>
+    </div>
+
+    <!--各javascriptの読み込み-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- FirebaseSDKを導入 -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.17.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/7.17.1/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+</html>

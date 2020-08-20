@@ -1,0 +1,176 @@
+<!--特にhtmlのバージョンを指定していない場合、html5になる-->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>N.Nakanoのポートフォリオサイト</title>
+    <!--検索エンジンに表示されるメタデータが以下なので、キーワードも含め重要-->
+    <meta
+      name="description"
+      content="技術の試し使い、ログなどを記録していくサイトです。"
+    />
+    <!--デバイスの大きさに合わせてサイズを決めるというタグ-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--bootstrapの導入-->
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!--rel属性でstylesheetを指定し、リンクを読み込めるようにする-->
+    <link rel="stylesheet" href="style.css" />
+    <!--fontを読み込む。ページが遅くなる可能性があるので注意-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- カルーセル作成 -->
+    <div
+      id="carouselFadeExampleIndicators"
+      class="carousel slide carousel-fade"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <!-- カルーセル一枚目 -->
+          <img
+            class="d-block w-100"
+            src="https://firebasestorage.googleapis.com/v0/b/project-8ca8c.appspot.com/o/images%2Ftop-image.png?alt=media&token=6a3648d5-9d81-4671-9350-b7c9d3e63951"
+            data-src="holder.js/900x400?theme=social"
+            alt="カワウソの画像"
+            data-holder-rendered="true"
+          />
+        </div>
+        <!-- カルーセル二枚目 -->
+        <div class="carousel-item">
+          <img
+            class="d-block w-100"
+            src="https://firebasestorage.googleapis.com/v0/b/project-8ca8c.appspot.com/o/images%2Ftop-image2.png?alt=media&token=0484cec8-470d-42f9-af80-7f42534f695b"
+            data-src="holder.js/900x400?theme=industrial"
+            alt="キツネの画像"
+            data-holder-rendered="true"
+          />
+        </div>
+      </div>
+      <!-- カルーセルのコントロール -->
+      <a
+        class="carousel-control-prev"
+        href="#carouselFadeExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselFadeExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!--自己紹介のセクション_section1-->
+    <div class="section1">
+      <h1>
+        ネコの発情について
+      </h1>
+      <h2>
+        ・メスの発情
+      </h2>
+      <p>
+        個体差もあるが、おおむね生後6か月から12か月で性的に成熟し、その後、定期的に発情する。発情の周期についてはいくつかの説がある。
+        ネコは長日繁殖動物のため、暖かい時期と日照時間が14時間程度になる時期に発情がくる。
+      </p>
+      <h2>
+        ・オスの発情
+      </h2>
+      <p>
+        メスよりやや2、3か月程度遅れて成熟するが、個体差が大きい。定期的な発情期はなく、メスの発情に誘発されて発情する。発情すると、スプレー（尿マーキング）と呼ばれる特徴的な行動を行うようになり、オス同士のけんかも多くなる。また、まれにメスでもスプレーをすることがある。
+      </p>
+    </div>
+
+    <!-- 作品紹介のセクション_section2 -->
+    <div class="section2">
+      <!--ポートフォリオの羅列カードを作成-->
+      <div class="card">
+        <a href="calculator.html">
+          <img
+            class="card-img-top"
+            src="https://firebasestorage.googleapis.com/v0/b/project-8ca8c.appspot.com/o/images%2Ftop-image2.png?alt=media&token=0484cec8-470d-42f9-af80-7f42534f695b"
+            alt="計算機のイメージ"
+            href="calculator.html"
+        /></a>
+        <div class="card-body">
+          <h4 class="card-title">スーパー計算機</h4>
+          <p class="card-text">
+            計算機を作成しました。<br />ここでは、関数の使い方を主に学びました。
+          </p>
+          <a href="calculator.html" class="btn btn-primary">この作品を見る</a>
+        </div>
+      </div>
+    </div>
+    <div class="section2">
+      <!--ポートフォリオの羅列カードを作成-->
+      <div class="card">
+        <a href="calculator.html">
+          <img
+            class="card-img-top"
+            src="https://firebasestorage.googleapis.com/v0/b/project-8ca8c.appspot.com/o/images%2Ftop-image2.png?alt=media&token=0484cec8-470d-42f9-af80-7f42534f695b"
+            alt="計算機のイメージ"
+            href="calculator.html"
+        /></a>
+        <div class="card-body">
+          <h4 class="card-title">スーパー計算機</h4>
+          <p class="card-text">
+            計算機を作成しました。<br />ここでは、関数の使い方を主に学びました。
+          </p>
+          <a href="calculator.html" class="btn btn-primary">この作品を見る</a>
+        </div>
+      </div>
+    </div>
+
+    <!--各javascriptの読み込み-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- FirebaseSDKを導入 -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/7.17.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/7.17.1/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+</html>

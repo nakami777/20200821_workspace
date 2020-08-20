@@ -1,0 +1,176 @@
+<!--特にhtmlのバージョンを指定していない場合、html5になる-->
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ネコの実態</title>
+    <!--検索エンジンに表示されるメタデータが以下なので、キーワードも含め重要-->
+    <meta name="description" content="ネコの好きなもの、日々の生活をご紹介" />
+    <!--デバイスの大きさに合わせてサイズを決めるというタグ-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!--bootstrapの導入-->
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- jQuery読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!--rel属性でstylesheetを指定し、リンクを読み込めるようにする-->
+    <link rel="stylesheet" href="test_cat_detail.css" />
+    <!--fontを読み込む。ページが遅くなる可能性があるので注意-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--sticky-topで固定ヘッダーを作成出来る-->
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">N.Nakano</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!--番号は順番に使っていく。h1タグは1ページに一回のみ使うのが良いとされている。
+      基本的に使用する番号はh4までで、h5 ~ h6は殆どの場合使用しない-->
+    <h1>ネコの一日</h1>
+    <!--ひとかたまりの文章にはパラグラフで区切る
+    3 ~ 5行くらいで区切るといい-->
+    <p>ひたすら寝ています</p>
+    <p>かわいいですね</p>
+    <!--href属性にリンク、target属性に_blank指定で別タブ開かせられる
+    href属性でmailtoを使用するとメールアドレスに飛ばせる-->
+    <a
+      href="https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.philtesla.com%2Fwp-content%2Fuploads%2F2019%2F01%2FVES.png&imgrefurl=http%3A%2F%2Fwww.philtesla.com%2Fbuilding-management-system-bms%2F&tbnid=QPFollIfFcBuuM&vet=12ahUKEwi0sKuNq8TqAhUKCpQKHb3sDhAQMygBegUIARCTAQ..i&docid=nSsssVwWo5BPHM&w=700&h=436&q=fdas&ved=2ahUKEwi0sKuNq8TqAhUKCpQKHb3sDhAQMygBegUIARCTAQ"
+      target="_blank"
+    >
+      <!--写真がない場合、何も表示されない可能性があるためalt属性は極力使う-->
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNcBeaG6rfZOaJ4H-VOOH8nZtozs3BOPuuQw&usqp=CAU"
+        alt="寝ているネコの画像"
+      />
+    </a>
+    <!--自分で勝手に命名してブロック要素をグループ分け出来る p.89
+    - ヘッダー部を作成するheaderタグ
+    - ナビゲーションメニューを作成するnavタグ
+    - 記事の部分を作成するarticleタグ
+    - テーマを持ったグループをまとめるためのsectionタグ
+    - メインコンテンツを作成するmainタグ
+    - メインコンテンツではない、補足情報を作成するasideタグ
+    - フッターを作成できるfooterタグ
+    - 意味が特にない場合に作成するdivタグ-->
+    <div class="container">
+      <div class="item">
+        <!--ul = 順不同リスト（Unnorder）の意味-->
+        <ul>
+          <li>三毛猫</li>
+          <li>シャム猫</li>
+          <li>ネネコ</li>
+        </ul>
+      </div>
+      <div class="item">
+        <!--ol = Ordered（順同リストの意味）-->
+        <ol>
+          <li>三毛猫</li>
+          <li>シャム猫</li>
+          <li>ネネコ</li>
+        </ol>
+      </div>
+    </div>
+    <!--CSSをクラス単位で管理出来るようにする-->
+    <div class="container">
+      <div class="item">
+        <h2>
+          メスの発情
+        </h2>
+        <p>
+          個体差もあるが、おおむね生後6か月から12か月で性的に成熟し、その後、定期的に発情する。発情の周期についてはいくつかの説がある。
+          <br />
+          ネコは長日繁殖動物のため、暖かい時期と日照時間が14時間程度になる時期に発情がくる。
+        </p>
+      </div>
+      <div class="item">
+        <h2>
+          オスの発情
+        </h2>
+        <p>
+          メスよりやや2、3か月程度遅れて成熟するが、個体差が大きい。定期的な発情期はなく、メスの発情に誘発されて発情する。
+          <br />
+          発情すると、スプレー（尿マーキング）と呼ばれる特徴的な行動を行うようになり、オス同士のけんかも多くなる。また、まれにメスでもスプレーをすることがある。
+        </p>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <div class="p-2">Flex item 1</div>
+      <div class="p-2">Flex item 2</div>
+      <div class="p-2">Flex item 3</div>
+    </div>
+
+    <!-- responsive variations -->
+    <div class="d-flex justify-content-sm-between">三毛猫</div>
+    <div class="d-flex justify-content-md-between">シャム猫</div>
+    <div class="d-flex justify-content-lg-between">...</div>
+    <div class="d-flex justify-content-xl-between">...</div>
+    <!--各javascriptの読み込み-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+/*このコードを入れることで文字化けを防ぐ*/
+@charset "UTF-8";
+/*
+CSSの基本として、セレクター・プロパティ・値の3つを抑えておくといい。
+セレクター = body（どの部分を装飾するか？body部分です）
+プロパティ = background-color（何を変えるのか？背景色です）
+値 = #fffeee（どのように変えるのか？色です）
+*/
+/*
+カンマで区切れば、複数選択が可能
+空白を入れることで配下を選択できる
+文字サイズに関しては以下記事が秀逸
+http://ohta-hiroyuki.hatenablog.com/entry/2016/06/12/rem_font-size_%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%82
+*/
+html {
+  /*モバイル向けなので、10px相当を指定*/
+  font-size: 10px;
+  font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN',
+    'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック',
+    'MS PGothic', sans-serif;
+}
+body {
+  font-size: 1.6rem;
+  background-color: #ffffff;
+}
+h1 {
+  font-size: 2.4rem;
+  border-bottom: 4px solid #d4e330;
+  margin: 2.4rem 0 0 0;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1.8rem 0 0 0;
+}
+h3 {
+  font-size: 1.6rem;
+  margin: 1.6rem 0 0 0;
+}
+h4 {
+  font-size: 1.6rem;
+  margin: 1.6rem 0 0 0;
+}
+p {
+  font-size: 1.6rem;
+  margin: 1.6rem 0 0 0;
+}
+/*自己紹介のセクション*/
+.section1 {
+  padding: 2rem;
+}
+/*作品紹介のセクション*/
+.section2 {
+  padding: 2rem 2rem 0 2rem;
+}
